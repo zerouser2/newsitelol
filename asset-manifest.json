@@ -1,16 +1,26 @@
 {
   "files": {
-    "main.css": "/newsitelol/static/css/main.f855e6bc.css",
-    "main.js": "/newsitelol/static/js/main.99d6505f.js",
-    "static/js/453.6043dff6.chunk.js": "/newsitelol/static/js/453.6043dff6.chunk.js",
-    "static/media/logo.svg": "/newsitelol/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/newsitelol/static/css/main.b7c20727.css",
+    "main.js": "/newsitelol/static/js/main.b91a2fd1.js",
+    "static/media/bg.png": "/newsitelol/static/media/bg.a102c1f3719bbec54f41.png",
+    "static/media/light.png": "/newsitelol/static/media/light.7559093b719fd059b7cf.png",
+    "static/media/diamondFon.png": "/newsitelol/static/media/diamondFon.0125f84b8a5acdb7bcc4.png",
+    "static/media/card1.png": "/newsitelol/static/media/card1.d79a973288c290fbd05c.png",
+    "static/media/women.jpg": "/newsitelol/static/media/women.de195a9ecde4a83d0af6.jpg",
+    "static/media/womem.png": "/newsitelol/static/media/womem.1cc4cbe360ad6ac86ed6.png",
+    "static/media/avatar.jpg": "/newsitelol/static/media/avatar.84425ffc06af6a169315.jpg",
+    "static/media/fonxz.png": "/newsitelol/static/media/fonxz.df2848974f2c47650f7d.png",
+    "static/media/token.png": "/newsitelol/static/media/token.ee4a2ff993ad085087be.png",
+    "static/media/Sk-Modernist-Regular.otf": "/newsitelol/static/media/Sk-Modernist-Regular.748466dca5113482a27f.otf",
+    "static/media/fonWomen.jpg": "/newsitelol/static/media/fonWomen.c44194bfe0eb8ed17ed2.jpg",
+    "static/media/coins.png": "/newsitelol/static/media/coins.d74a6abe749987d1acba.png",
+    "static/media/logo.png": "/newsitelol/static/media/logo.6c6d7b00d3fda6db552e.png",
     "index.html": "/newsitelol/index.html",
-    "main.f855e6bc.css.map": "/newsitelol/static/css/main.f855e6bc.css.map",
-    "main.99d6505f.js.map": "/newsitelol/static/js/main.99d6505f.js.map",
-    "453.6043dff6.chunk.js.map": "/newsitelol/static/js/453.6043dff6.chunk.js.map"
+    "main.b7c20727.css.map": "/newsitelol/static/css/main.b7c20727.css.map",
+    "main.b91a2fd1.js.map": "/newsitelol/static/js/main.b91a2fd1.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.99d6505f.js"
+    "static/css/main.b7c20727.css",
+    "static/js/main.b91a2fd1.js"
   ]
 }

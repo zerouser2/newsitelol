@@ -9,7 +9,6 @@
 }
 
 .container {
-    display: flex;
     position: relative;
     padding: 43px 42px 54px 5%;
     width: 33%;
@@ -25,6 +24,11 @@
     p {
         font-weight: 400;
         font-size: 16px;
+    }
+
+    img {
+        width: 22px;
+        height: 22px;
     }
 }
 
@@ -80,35 +84,60 @@
     color: #fff;
 }
 
+.activityContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    div:first-of-type {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
 .reward {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+}   
+
+.navs {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    gap: 3%;
+
+    div {
+        gap: 8px;
+    }
+}
+
+.reward {
     border-radius: 10px;
     background-color: #2B2A2AA3;
-    gap: 2%;
-    margin: 17px 0 17px 0;
+    z-index: 1;
+}
+
+.mix {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 100%;
 }
 
 .rewarding {
+    padding: 18px 25%;
     background-color: #262626;
-    padding: 18px 89px 17px 117px;
     border-radius: 10px;
 }
 
 .time {
-    background-color: #2B2A2AA3;
-    padding: 18px 12px 17px 14px;
+    padding: 18px 10%;
     border-radius: 10px;
 }
 
-.navs {
-    display: flex;
-    gap: 17px;
-
-}
-
 .nav {
-    padding: 12px 45px;
+    padding: 18px 15%;
     background-color: #FFFFFF;
     border-radius: 8px;
     text-decoration: none;
@@ -118,7 +147,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8px;
     }
 }
 
@@ -142,17 +170,19 @@
     }
 }
 
+@media (max-width: 1678px) and (min-width: 864px) {
+    .reward {
+        background-color: transparent;
+    }
+    .time {
+        background-color: #2B2A2AA3;
+        padding: 18px 11%;
+    }
+}
+
 @media (max-width: 1149px) and (min-width: 930px) {
     .main {
         gap: 1%;
-    }
-    
-    .rewarding {
-        padding: 18px 32%;
-    }
-
-    .nav {
-        padding: 12px 12%;
     }
 
     .koshelek {
@@ -179,14 +209,6 @@
 @media (max-width: 930px) and (min-width: 864px) {
     .main {
         gap: 1%;
-    }
-
-    .rewarding {
-        padding: 18px 25%;
-    }
-
-    .nav {
-        padding: 12px 8%;
     }
 
     .koshelek {

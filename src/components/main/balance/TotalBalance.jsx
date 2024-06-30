@@ -25,10 +25,6 @@ function TotalBalance() {
             </div>
 
             <Activities />
-
-            <div className={styles.tradingButton}>
-                <a>Trading platform 🦄 </a>
-            </div>
         </div>
     );
 }

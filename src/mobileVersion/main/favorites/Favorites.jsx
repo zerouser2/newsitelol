@@ -9,6 +9,7 @@ import dogecoinGraph from '../../images/dogecoinGraph.png';
 function Favorites() {
     return (
         <div className={styles.favoritesContainer}>
+
             <div className={styles.favText}>
                 <p>Favorites</p>
             </div>
@@ -29,9 +30,6 @@ function Favorites() {
                     </div>
                 </div>
 
-                <div className={styles.imageContainer}>
-                    
-                </div>
 
                 <div className={styles.usdt}>
                     <img src={usdt} />
@@ -46,6 +44,8 @@ function Favorites() {
                         <p style={{ color: '#02C173', fontWeight: '400', fontSize: '14px', lineHeight: '18.2px' }}>1.13%</p>
                     </div>
                 </div>
+                
+                <div className={styles.imageContainer}></div>
 
                 <div className={styles.dogecoin}>
                     <img src={dogecoin} />

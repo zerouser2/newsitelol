@@ -28,13 +28,16 @@ function Graph() {
                         </div>
                     </div>
 
-                    <nav className={`${styles.menu} ${isOpen ? styles.active : ''}`}>
-                        <ul className={styles.menulist}>
-                            <li className={styles.menuitem}>BTC / ETH</li>
-                            <li className={styles.menuitem}>Что-то</li>
-                            <li className={styles.menuitem}>Что-то</li>
-                        </ul>
-                    </nav>
+                    <div className={styles.menuContainer}>
+                        <nav className={`${styles.menu} ${isOpen ? styles.active : ''}`}>
+                            <ul className={styles.menulist}>
+                                <li className={styles.menuitem}>BTC / ETH</li>
+                                <li className={styles.menuitem}>Что-то</li>
+                                <li className={styles.menuitem}>Что-то</li>
+                            </ul>
+                        </nav>
+
+                    </div>
 
                     <div className={styles.starBlock}>
                         <img src={starImg} className={styles.starImg} />

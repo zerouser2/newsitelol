@@ -1,15 +1,17 @@
-.favoritesContainer {
-    width: 100%;
+.favoritesContainer > :not(.imageContainer) {
     display: flex;
+    width: 100%;
     flex-direction: column; 
-    align-items: stretch;
     background: #161514;
-
+    padding: 0 5%;
+    margin-top: 14px;
 }
 
 .valuta {
     display: flex;
-    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     flex-direction: column;
     position: relative;
     color: #fff;
@@ -18,20 +20,19 @@
 .notcoin, .usdt, .dogecoin {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 16px 5%;
+    padding: 16px 0;
     z-index: 1;
     white-space: nowrap;
 
     div {
         margin-left: 5%;
-        width: 100%;
     }
 }
 
 .favText {
     color: #fff;
-    padding-left: 5%;
 }
 
 .imageContainer {

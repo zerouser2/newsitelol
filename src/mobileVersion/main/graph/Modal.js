@@ -16,30 +16,30 @@ function Modal({ active, setActive }) {
 
     if (active) {
         return (
-            <div className={`${styles.modal} ${active ? styles.active : ''}`} >
-                <div className={styles.close}>
-                    <span class="material-symbols-outlined" onClick={() => setActive(false)}>
-                        close
-                    </span>
-                </div>
-                <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
-                    <p>Amount: </p>
-
-                    <div className={styles.imgandinput}>
-                        <img src={logo} style={{ width: '28px' }} />
-                        <input type='text' />
+            <div className={styles.modalContainer} >
+                <div className={`${styles.modal} ${active ? styles.active : ''}`}>
+                    <div className={styles.close}>
+                        <span class="material-symbols-outlined" onClick={() => setActive(false)}>
+                            close
+                        </span>
                     </div>
+                    <div className={styles.modalContent} onClick={e => e.stopPropagation()}>
+                        <p>Amount: </p>
 
+                        <div className={styles.imgandinput}>
+                            <img src={logo} style={{ width: '28px' }} />
+                            <input type='text' />
+                        </div>
+
+                    </div>
+                    <div className={styles.modalButton}>
+                        <a href='#'>
+                            SAVE
+                        </a>
+
+                    </div>
                 </div>
-                <div className={styles.modalButton}>
-                    <a href='#'>
-                        SAVE
-                    </a>
-
-                </div>
-
             </div>
-
         );
     }
 }

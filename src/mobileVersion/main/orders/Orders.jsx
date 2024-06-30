@@ -43,9 +43,6 @@ function Orders() {
                 </div>
             </div>
              
-            <div className={styles.tradingButton}>
-                <a href='#'>Trading platform 🦄 </a>
-            </div>
         </div>
     );
 }

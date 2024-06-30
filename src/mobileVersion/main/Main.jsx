@@ -11,8 +11,6 @@ function Main() {
     return (  
         <div className={styles.main}>
             <MobileBalance />
-            <Favorites />
-            <Orders />
             <WalletNotActive />
             <Graph />
             <Frens />

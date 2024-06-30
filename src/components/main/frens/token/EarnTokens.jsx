@@ -14,7 +14,7 @@ function EarnTokens() {
             </div>
 
             <div className={styles.tokenButton}>
-                <button>Copy link ✨</button>
+                <a>Copy link ✨</a>
             </div>
         </div>
     );

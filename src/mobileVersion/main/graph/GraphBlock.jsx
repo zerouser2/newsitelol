@@ -20,20 +20,22 @@ function GraphBlock() {
 
                 <div className={styles.select}>
                     <div onClick={() => setOpenHour(!isOpenHour)} className={styles.selection}>
-
                         <p>1 hour</p>
                         <span class="material-symbols-outlined">
                             keyboard_arrow_down
                         </span>
                     </div>
-                    <nav className={`${styles.menu} ${isOpenHour ? styles.active : ''}`}>
-                        <ul className={styles.menulist}>
-                            <li className={styles.menuitem}>1 hour</li>
-                            <li className={styles.menuitem}>2 hour</li>
-                            <li className={styles.menuitem}>3 hour</li>
-                            <li className={styles.menuitem}>4 hour</li>
-                        </ul>
-                    </nav>
+                    <div className={styles.menuContainer}>
+                        <nav className={`${styles.menu} ${isOpenHour ? styles.active : ''}`}>
+                            <ul className={styles.menulist}>
+                                <li className={styles.menuitem}>1 hour</li>
+                                <li className={styles.menuitem}>2 hour</li>
+                                <li className={styles.menuitem}>3 hour</li>
+                                <li className={styles.menuitem}>4 hour</li>
+                            </ul>
+                        </nav>
+
+                    </div>
                 </div>
 
 
@@ -66,7 +68,7 @@ function GraphBlock() {
                     </div>
                 </div>
             </div>
-            <Modal active={isOpenAmount} setActive={setOpenAmount}/>
+            <Modal active={isOpenAmount} setActive={setOpenAmount} />
         </div>
     );
 }

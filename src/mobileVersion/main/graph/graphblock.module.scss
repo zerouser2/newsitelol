@@ -2,6 +2,7 @@
     color: #fff;
     margin-left: 3%;
     margin-top: 24px;
+    position: relative;
 }
 
 .cost {
@@ -76,10 +77,14 @@
     }
 }
 
+.menuContainer {    
+    width: 100%;
+    height: 100px;
+}
 
 .menu {
     position: absolute;
-    bottom: 66%;
+    bottom: 58%;
     right: 0.5%;
     border: 1px solid #555;
     background-color: #555;
@@ -121,14 +126,31 @@
 }
 
 
+.modalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 999;
+    backdrop-filter: blur(3px);
+}
+
 .modal {
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 95%;
     min-width: 300px;
     text-align: center;
-    height: 268px;
+    height: 240px;
     border-radius: 27px;
     background: linear-gradient(134.98deg, rgba(207, 63, 63, 0.15) 0%, rgba(223, 82, 21, 0.02) 100%);
     border: 1px solid;

@@ -3,6 +3,7 @@
     position: relative;
     color: #fff;
     z-index: 1;
+    padding: 0 5%;
 }
 
 .money {
@@ -12,13 +13,9 @@
 .order {
     display: flex;
     align-items: center;
-    margin: 0 0 16px 5%;
+    justify-content: space-between;
     gap: 6%;
     backdrop-filter: blur(100px);
-}
-
-.orderText {
-    margin-left: 5%;
 }
 
 .tradingButton {
@@ -46,30 +43,12 @@
 
 
 @media (min-width: 400px) and (max-width: 864px) {
-    .tradingButton {
-
-        a{
-
-            margin-left: -25%
-        }
-    }
 
 }
 
 @media (min-width: 650px) and (max-width: 864px) {
-    .tradingButton {
-        a{
-
-            margin-left: -45%
-        }
-    }
 
 }
 
 @media (min-width: 820px) and (max-width: 864px) {
-    .tradingButton {
-        a{
-            margin-left: -65%
-        }
-    }
 }

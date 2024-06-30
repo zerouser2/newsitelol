@@ -1,7 +1,9 @@
 .main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     width: 100%;
     height: 100%;
-    background-color: #161514;
     border-top: 2px solid #555;
     overflow: hidden;
     position: relative;
@@ -10,13 +12,13 @@
 .balanceContainer {
     display: flex;
     position: relative;
-    padding: 43px 42px 15px 5%;
+    padding: 43px 0 15px 0;
     width: 100%;
+    height: 844px;
     flex-wrap: wrap;
     background-color: #161514;
     overflow: hidden;
     flex-direction: column;
-    z-index: 1;
 }
 
 .koshelek {
@@ -25,7 +27,7 @@
     align-items: center;
     color: #fff;
     z-index: 1;
-    
+
     p {
         font-weight: 400;
         font-size: 14px;
@@ -93,41 +95,62 @@
     line-height: 20.8px;
 }
 
-.activities {
+
+.act {
+    width: 100%;
     color: #fff;
-    z-index: 1;
+}
+
+.mix {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 100%;
+    margin-top: 14px;
 }
 
 .reward {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     border-radius: 10px;
-    width: 100%;
-    margin: 10px 0 10px 0;
+    background-color: #2B2A2AA3;
+    z-index: 1;
 }
 
+
 .rewarding {
+    padding: 14px 25%;
     background-color: #262626;
-    padding: 18px 24%;
     border-radius: 10px;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .time {
-    background-color: #262626;
-    padding: 18px 5%;
+    display: flex;
+    align-items: center;
+    padding: 14px 10%;
     border-radius: 10px;
+    color: #808080;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .navs {
     display: flex;
+    justify-content: space-between;
+    z-index: 1;
     gap: 3%;
-    width: 100%;
-    min-width: 300px;
+    
+    div {
+        gap: 8px;
+    }
 }
 
 .nav {
-    width: 45%;
-    padding: 12px 20%;
+    padding: 12px 10%;
     background-color: #FFFFFF;
     border-radius: 8px;
     text-decoration: none;
@@ -137,56 +160,61 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2%;
     }
 }
 
 .tradingButton {
     display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
 
-    button {
+    a {
         padding: 25px 35px;
         background: linear-gradient(134.98deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%);
         border-radius: 16px;
         border-image-source: linear-gradient(272.61deg, rgba(255, 255, 255, 0.2) 2.66%, rgba(255, 255, 255, 0.1) 100%, rgba(255, 255, 255, 0.05) 100%);
-        margin-top: 76px;
         border: 1px solid #FFFFFF33;
         white-space: nowrap;
         color: #fff;
+        backdrop-filter: blur(2px);
         font-weight: 400;
         font-size: 16px;
         cursor: pointer;
     }
 }
 
+.info,
+.act {
+    padding: 0 5%;
+}
 
-@media (min-width: 380px) and (max-width: 864px) {
+
+@media (min-width: 400px) and (max-width: 650px) {
     .rewarding {
-        padding: 18px 26%;
+        padding: 14px 30%;
     }
 }
 
-@media (min-width: 460px) and (max-width: 864px) {
+@media (min-width: 610px) and (max-width: 710px) {
     .rewarding {
-        padding: 18px 28%;
+        padding: 14px 35%;
     }
-} 
 
-@media (min-width: 510px) and (max-width: 864px) {
-    .rewarding {
-        padding: 18px 30%;
+    .time {
+        padding: 14px 6% 14px 0;
     }
 }
 
-@media (min-width: 620px) and (max-width: 864px) {
+@media (min-width: 710px) and (max-width: 864px) {
     .rewarding {
-        padding: 18px 32%;
+        padding: 14px 37%;
     }
-}
 
-@media (min-width: 740px) and (max-width: 864px) {
-    .rewarding {
-        padding: 18px 34%;
+    .time {
+        padding: 14px 6% 14px 0;
     }
 }

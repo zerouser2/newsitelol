@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/newsitelol/static/css/main.d30c26e4.css",
-    "main.js": "/newsitelol/static/js/main.75ee4ab7.js",
+    "main.js": "/newsitelol/static/js/main.0094c1c7.js",
     "static/media/bg.png": "/newsitelol/static/media/bg.a102c1f3719bbec54f41.png",
     "static/media/light.png": "/newsitelol/static/media/light.7559093b719fd059b7cf.png",
     "static/media/diamondFon.png": "/newsitelol/static/media/diamondFon.0125f84b8a5acdb7bcc4.png",
@@ -17,10 +17,10 @@
     "static/media/logo.png": "/newsitelol/static/media/logo.6c6d7b00d3fda6db552e.png",
     "index.html": "/newsitelol/index.html",
     "main.d30c26e4.css.map": "/newsitelol/static/css/main.d30c26e4.css.map",
-    "main.75ee4ab7.js.map": "/newsitelol/static/js/main.75ee4ab7.js.map"
+    "main.0094c1c7.js.map": "/newsitelol/static/js/main.0094c1c7.js.map"
   },
   "entrypoints": [
     "static/css/main.d30c26e4.css",
-    "static/js/main.75ee4ab7.js"
+    "static/js/main.0094c1c7.js"
   ]
 }

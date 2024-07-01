@@ -10,7 +10,9 @@ import Orders from './orders/Orders';
 function MobileBalance() {
     return (
         <div className={styles.balanceContainer}>
-            <div className={styles.yellow}></div>
+            <div className={styles.yellowContainer}>
+                <div className={styles.yellow}></div>
+            </div>
 
             <div className={styles.info}>
                 <div className={styles.koshelek}>

@@ -1,15 +1,37 @@
 import Onboarding from "./components/header/Onboarding";
 import Balance from "./components/main/balance/Balance";
-import Frens from "./components/main/frens/token/Frens";
-import Graph from "./components/main/graph/Graph";
+import Frens from "./mobileVersion/main/frens/Frens";
+import Graph from "./mobileVersion/main/graph/Graph";
 import TradingViewWidget from "./components/main/graph/TradingViewWidget";
-import Tasks from "./components/main/tasks/Tasks";
+import Tasks from "./mobileVersion/main/tasks/Tasks";
 import Header from "./mobileVersion/header/Header";
 import { useMediaQuery } from 'react-responsive';
 import MobileBalance from "./mobileVersion/main/MobileBalance";
 import Favorites from "./mobileVersion/main/favorites/Favorites";
 import Main from "./mobileVersion/main/Main";
+import Router from "./Router";
+import { Route, RouterProvider, createRoutesFromElements } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
+import WalletNotActive from "./mobileVersion/main/balanceNotActive/WalletNotActive";
+import MixComponent from "./mobileVersion/MixComponent";
 
+
+
+const basename = '/newsitelol';
+
+const router = createBrowserRouter(createRoutesFromElements(
+    <Route path='/' element={<Router />}>
+      <Route path="allcomponents" element={<MixComponent />} />
+      <Route path="totalbalance" element={<MobileBalance />} />
+      <Route path="header" element={<Header />} />
+      <Route path="notactive" element={<WalletNotActive />} />
+      <Route path="graph" element={<Graph />} />
+      <Route path="frens" element={<Frens />} />
+      <Route path="tasks" element={<Tasks />} />
+    </Route>
+),
+  {basename: basename}
+)
 
 function App() {
   const isMobile = useMediaQuery({ query: '(max-width: 864px)' });
@@ -18,8 +40,7 @@ function App() {
     <div className="App">
       {isMobile ?
         <>
-          <Header />
-          <Main />
+          <RouterProvider router={router} />
         </>
         :
         <>

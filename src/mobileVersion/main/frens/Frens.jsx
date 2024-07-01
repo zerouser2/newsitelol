@@ -5,7 +5,10 @@ import lightImg from '../../images/light.png'
 function Frens() {
     return (
         <div className={styles.frensContainer}>
-            <div className={styles.yellow}></div>
+            <div className={styles.yellowContainer}>
+
+                <div className={styles.yellow}></div>
+            </div>
             <div className={styles.referal}>
                 <div className={styles.frens}>Frens</div>
                 <div className={styles.tokenText}>
@@ -40,7 +43,7 @@ function Frens() {
                     </div>
                 </div>
 
-                
+
                 <div className={styles.tokenButton}>
                     <a>Copy link ✨</a>
                 </div>

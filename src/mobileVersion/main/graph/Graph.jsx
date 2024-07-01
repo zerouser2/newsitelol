@@ -10,7 +10,11 @@ function Graph() {
     return (
         <div className={styles.graphContainer}>
             <div className={styles.actions}>
-                <div className={styles.yellow}></div>
+
+                <div className={styles.yellowContainer}>
+                    <div className={styles.yellow}></div>
+
+                </div>
 
                 <div className={styles.choose}>
                     <div className={styles.arrowBack} style={{ cursor: 'pointer' }}>

@@ -49,13 +49,13 @@ function Button() {
                 </span>
                 <p>Swipe to Start</p>
                 <div className={styles.spans}>
-                    <span class="material-symbols-outlined" style={{opacity: '0.15'}}>
+                    <span className={`material-symbols-outlined ${styles.firstSpan}`}>
                         chevron_right
                     </span>
-                    <span class="material-symbols-outlined" style={{opacity: '0.5'}}>
+                    <span className={`material-symbols-outlined ${styles.secondSpan}`}>
                         chevron_right
                     </span>
-                    <span class="material-symbols-outlined" style={{marginRight: '16px'}}>
+                    <span className={`material-symbols-outlined ${styles.thirdSpan}`}>
                         chevron_right
                     </span>
                 </div>

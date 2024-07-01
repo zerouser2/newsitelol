@@ -8,8 +8,11 @@ import diamond from '../../images/diamondFon.png';
 function WalletNotActive() {
     return (
         <div className={styles.walletnotactive}>
-            <div style={{display: 'flex', flexDirection: 'column'   }}>
-                <div className={styles.yellow}></div>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <div className={styles.yellowContainer}>
+                    <div className={styles.yellow}></div>
+
+                </div>
 
                 <div className={styles.koshelek}>
                     <img src={koshelekImg} />

@@ -1,0 +1,17 @@
+.navigation {
+    width: 100%;
+    height: 100px;
+    background-color: #555;
+}
+
+.navs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}

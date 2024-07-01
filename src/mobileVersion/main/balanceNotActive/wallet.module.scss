@@ -9,12 +9,22 @@
     flex-direction: column;
     z-index: 1;
     border-top: 2px solid;
+    overflow: hidden;
+}
+
+.yellowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    top: -15%;
 }
 
 .yellow {
     width: 278px;
     height: 278px;
-    position: absolute;
     border-radius: 50%;
     background-color: #EE2B0033;
     filter: blur(50px);
@@ -117,9 +127,10 @@
     height: 80%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     top: 30%;
     opacity: 0.5;
+
 }
 
 .connectButton {

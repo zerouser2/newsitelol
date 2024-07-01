@@ -30,11 +30,34 @@
 
 .spans {
     span {
-        width: 20px;
         height: 20px;
     }
 }
 
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.firstSpan {
+    animation: fade 2s infinite;
+}
+
+.secondSpan {
+    animation: fade 2s infinite 0.5s;
+}
+
+.thirdSpan {
+    animation: fade 2s infinite 1s;
+}
 .arrow {
     background-color: #fff;
     color: #161514;

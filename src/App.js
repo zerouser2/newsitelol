@@ -1,9 +1,11 @@
 import Onboarding from "./components/header/Onboarding";
 import Balance from "./components/main/balance/Balance";
-import Frens from "./mobileVersion/main/frens/Frens";
-import Graph from "./mobileVersion/main/graph/Graph";
+import MobileFrens from "./mobileVersion/main/frens/MobileFrens";
+import Frens from "./components/main/frens/token/Frens";
+
+import Graph from "./components/main/graph/Graph";
 import TradingViewWidget from "./components/main/graph/TradingViewWidget";
-import Tasks from "./mobileVersion/main/tasks/Tasks";
+import Tasks from "./components/main/tasks/Tasks";
 import Header from "./mobileVersion/header/Header";
 import { useMediaQuery } from 'react-responsive';
 import MobileBalance from "./mobileVersion/main/MobileBalance";
@@ -14,6 +16,8 @@ import { Route, RouterProvider, createRoutesFromElements } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 import WalletNotActive from "./mobileVersion/main/balanceNotActive/WalletNotActive";
 import MixComponent from "./mobileVersion/MixComponent";
+import MobileGraph from "./mobileVersion/main/graph/MobileGraph";
+import MobileTasks from "./mobileVersion/main/tasks/MobileTasks";
 
 
 
@@ -25,9 +29,9 @@ const router = createBrowserRouter(createRoutesFromElements(
       <Route path="totalbalance" element={<MobileBalance />} />
       <Route path="header" element={<Header />} />
       <Route path="notactive" element={<WalletNotActive />} />
-      <Route path="graph" element={<Graph />} />
-      <Route path="frens" element={<Frens />} />
-      <Route path="tasks" element={<Tasks />} />
+      <Route path="frens" element={<MobileFrens />} />
+      <Route path="graph" element={<MobileGraph />} />
+      <Route path="tasks" element={<MobileTasks />} />
     </Route>
 ),
   {basename: basename}

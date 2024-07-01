@@ -2,7 +2,7 @@ import styles from './frens.module.scss';
 import avatar from '../../images/avatar.jpg';
 import lightImg from '../../images/light.png'
 
-function Frens() {
+function MobileFrens() {
     return (
         <div className={styles.frensContainer}>
             <div className={styles.yellowContainer}>
@@ -52,4 +52,4 @@ function Frens() {
     );
 }
 
-export default Frens;
+export default MobileFrens;

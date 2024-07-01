@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './tasks.module.scss'
 
-function Tasks() {
+function MobileTasks() {
     const [isClaimed, setClaim] = useState(false)
 
     function handleClick(e) {
@@ -66,4 +66,4 @@ function Tasks() {
     );
 }
 
-export default Tasks;
+export default MobileTasks;

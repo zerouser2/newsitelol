@@ -3,9 +3,9 @@ import MobileBalance from "./MobileBalance";
 import Orders from "./orders/Orders";
 import styles from './mobBal.module.scss';
 import WalletNotActive from "./balanceNotActive/WalletNotActive";
-import Graph from "./graph/Graph";
-import Frens from "./frens/Frens";
-import Tasks from "./tasks/Tasks";
+import Graph from "./graph/MobileGraph";
+import Frens from "./frens/MobileFrens";
+import Tasks from "./tasks/MobileTasks";
 
 function Main() {
     return (  

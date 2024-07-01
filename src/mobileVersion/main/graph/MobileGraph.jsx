@@ -4,7 +4,7 @@ import starImg from '../../images/star.png'
 import GraphBlock from './GraphBlock';
 import TradingViewWidget from './TradingViewWidget';
 
-function Graph() {
+function MobileGraph() {
     const [isOpen, setOpen] = useState(false)
 
     return (
@@ -64,4 +64,4 @@ function Graph() {
     );
 }
 
-export default Graph;
+export default MobileGraph;

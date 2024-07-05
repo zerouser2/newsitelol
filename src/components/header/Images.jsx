@@ -1,7 +1,7 @@
 import styles from './header.module.scss';
-import cardImage from './images/card1.png';
-import coinsImage from './images/coins.png';
-import testWomen from './images/womem.png';
+import cardImage from './images/card.svg';
+import coinsImage from './images/coins.svg';
+import testWomen from './images/women.svg';
 import TextAndImg from './textandimg/TextAndImg';
 
 

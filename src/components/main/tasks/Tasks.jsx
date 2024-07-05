@@ -2,6 +2,8 @@ import { useState } from 'react';
 import OrangeCircle from '../circles/OrangeCircle';
 import RedCircle from '../circles/RedCircle';
 import styles from './tasks.module.scss'
+import RouterPc from '../../RouterPc';
+import Navigation from '../../Navigation';
 
 function Tasks() {
     const [isClaimed, setClaim] = useState(false)
@@ -13,47 +15,57 @@ function Tasks() {
     }
 
     return (
-        <div className={styles.tasksContainer}>
-            <OrangeCircle />
-            <div className={styles.onlyText}>
-                <p>Tasks</p>
 
-                <p className={styles.bigText}>Earn tokens</p>
+        <>
+            <Navigation />
+            <div className={styles.tasksContainer}>
+                <OrangeCircle />
+                <div className={styles.onlyText}>
+                    <p>Tasks</p>
 
-                <p>Complete tasks and get <text>tokens</text> instantly</p>
-            </div>
+                    <p className={styles.bigText}>Earn tokens</p>
 
-            <div className={styles.openedTasks}>
-                <p className={styles.quantity}>1 Open task</p>
+                    <p>Complete tasks and get <text>tokens</text> instantly</p>
+                </div>
 
-                <div className={styles.tasks}>
-                    <div className={styles.task}>
-                        <div className={styles.leftTask}>
-                            <div>💎</div>
+                <div className={styles.openedTasks}>
+                    <p className={styles.quantity}>1 Open task</p>
 
-                            <div>
-                                <p style={{ color: '#FFFFFF' }}>Subscribe to the Netherite</p>
-                                <p style={{ color: '#FFFFFF99' }}>+500 NZR</p>
+                    <div className={styles.tasks}>
+                        <div className={styles.task}>
+                            <div className={styles.leftTask}>
+                                <div className={styles.text}>
+                                    <div className={styles.diamond}>💎</div>
+
+                                    <div>
+                                        <p style={{ color: '#FFFFFF' }}>Subscribe to the Netherite</p>
+                                        <p style={{ color: '#FFFFFF99' }}>+500 NZR</p>
+                                    </div>
+                                </div>
+                                <a style={{ marginLeft: '8%' }}>Start</a>
                             </div>
-                            <button style={{ marginLeft: '8%' }}>Start</button>
                         </div>
-                    </div>
 
-                    <div className={styles.task}>
-                        <div className={styles.leftTask}>
-                            <div>💎</div>
+                        <div className={styles.task}>
+                            <div className={styles.leftTask}>
+                                <div className={styles.text}>
 
-                            <div>
-                                <p style={{ color: '#FFFFFF' }}>Subscribe to the Netherite</p>
-                                <p style={{ color: '#FFFFFF99' }}>+500 NZR</p>
+                                    <div className={styles.diamond}>💎</div>
+
+                                    <div>
+                                        <p style={{ color: '#FFFFFF' }}>Subscribe to the Netherite</p>
+                                        <p style={{ color: '#FFFFFF99' }}>+500 NZR</p>
+                                    </div>
+                                </div>
+                                <a style={{ marginLeft: '8%' }} onClick={handleClick} className={`${styles.claim} ${isClaimed ? styles.active : ''}`}>Claim</a>
                             </div>
-                            <button style={{ marginLeft: '8%' }} onClick={handleClick} className={`${styles.claim} ${isClaimed ? styles.active : ''}`}>Claim</button>
                         </div>
                     </div>
                 </div>
+                <RedCircle />
             </div>
-            <RedCircle />
-        </div>
+
+        </>
     );
 }
 

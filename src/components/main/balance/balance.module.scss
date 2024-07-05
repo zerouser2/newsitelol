@@ -1,6 +1,7 @@
 .main {
     display: flex;
     max-width: 100%;
+    height: 100vh;
     gap: 3%;
     background-color: #161514;
     border-top: 2px solid #555;
@@ -9,10 +10,12 @@
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     padding: 43px 42px 54px 5%;
     width: 33%;
-    flex-wrap: wrap;
 }
 
 .koshelek {
@@ -24,6 +27,7 @@
     p {
         font-weight: 400;
         font-size: 16px;
+        line-height: 20.8px;
     }
 
     img {
@@ -50,6 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 11px;
     color: #fff;
     margin: 17px 0 22px 0;
@@ -78,6 +83,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20.8px;
+    color: #FFFFFF99;
 }
 
 .activities {
@@ -112,8 +118,9 @@
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-    background-color: #2B2A2AA3;
     z-index: 1;
+    width: 100%;
+    background-color: #2B2A2AA3;
 }
 
 .mix {
@@ -121,28 +128,39 @@
     flex-direction: column;
     gap: 17px;
     width: 100%;
+    margin-top: 17px;
 }
 
 .rewarding {
     padding: 18px 25%;
     background-color: #262626;
     border-radius: 10px;
+    width: 100%;
     color: #808080;
     font-size: 16px;
     font-weight: 700;
+    text-align: center;
+}
+
+.btns {
+    color: #161514;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
 }
 
 .time {
-    padding: 18px 10%;
     border-radius: 10px;
     color: #808080;
     text-align: center;
+    width: 50px;
     font-size: 14px;
     font-weight: 400;
+    padding: 15px;
 }
 
 .nav {
-    padding: 18px 15%;
+    padding: 12px 12%;
     background-color: #FFFFFF;
     border-radius: 8px;
     text-decoration: none;
@@ -171,19 +189,15 @@
         font-size: 16px;
         cursor: pointer;
         background: linear-gradient(134.98deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%);
-
     }
 }
 
-@media (max-width: 1678px) and (min-width: 864px) {
-    .reward {
-        background-color: transparent;
-    }
-    .time {
-        background-color: #2B2A2AA3;
-        padding: 18px 13%;
+@media (max-width: 1303px) and (min-width: 864px) {
+    .nav {
+        padding: 12px 12%;
     }
 }
+
 
 @media (max-width: 1149px) and (min-width: 864px) {
     .main {
@@ -209,10 +223,11 @@
         font-weight: 600;
         font-size: 14px;
     }
-
+    .reward {
+        background-color: transparent
+    }
     .time {
         background-color: #2B2A2AA3;
-        padding: 18px 15%;
     }
 }
 
@@ -226,6 +241,9 @@
             font-size: 14px;
         }
     }
+    .nav {
+        padding: 12px 12%;
+    } 
 
     .bigN {
         gap: 2%;

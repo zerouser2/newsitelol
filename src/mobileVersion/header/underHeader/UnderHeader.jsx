@@ -6,11 +6,11 @@ function UnderHeader() {
     return (
         <div className={styles.underContainer}>
             <div className={styles.title}>
-                <p>Trade
-                    <br />
-                    more efficient
-                </p>
-                <img src={line} className={styles.line}></img>
+                <p>Trade</p>
+                <div className={styles.lines}>
+                    <img src={line} className={styles.line}></img>
+                </div>
+                <p>more efficient</p>
             </div>
             <div className={styles.desc}>
                 <p>A binary options broker working with TON. Get
@@ -25,6 +25,11 @@ function UnderHeader() {
                     <div className={styles.grayspan}></div>
                     <div className={styles.grayspan}></div>
                 </div>
+            </div>
+            <div className={styles.whitecircles}>
+                <div className={styles.white1}></div>
+                <div className={styles.white2}></div>
+                <div className={styles.redcircle}></div>
             </div>
             <Button />
         </div>

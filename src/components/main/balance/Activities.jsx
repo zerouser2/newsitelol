@@ -9,6 +9,7 @@ function Activities() {
             <div className={styles.activityContainer}>
                 <div>Activities</div>
                 <div className={styles.mix}>
+
                     <div className={styles.reward}>
                         <div className={styles.rewarding}>Rewarding</div>
                         <div className={styles.time}>15m</div>
@@ -18,22 +19,20 @@ function Activities() {
                         <a href='#' className={styles.nav}>
                             <div>
                                 <img src={fileImg} />
-                                <p>Tasks</p>
+                                <p className={styles.btns}>Tasks</p>
                             </div>
                         </a>
                         <a href='#' className={styles.nav}>
                             <div>
                                 <img src={peopleImg} />
-                                <p>Frens</p>
+                                <p className={styles.btns}>Frens</p>
                             </div>
                         </a>
                     </div>
+                    
                 </div>
             </div>
 
-            <div className={styles.tradingButton}>
-                <a>Trading platform 🦄 </a>
-            </div>
         </div>
     );
 }

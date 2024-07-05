@@ -1,3 +1,11 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #161514;
+}
+
+
 .graphContainer {
     width: 100%;
     position: relative;
@@ -30,8 +38,7 @@
 
 .actions {
     display: flex;
-    margin-top: 52px;
-    border-top: 1px solid;
+    margin-top: 25px;
     color: #fff;
     z-index: 1;
     padding: 24px 3% 0;
@@ -70,13 +77,13 @@
     position: absolute;
     width: 90%;
     height: 90px;
-    top: 15%;
+    top: 11%;
 }
 
 .menu {
     border: 1px solid #555;
     background-color: #555;
-    padding: 2%;
+    padding: 10px;
     color: black;
     border-radius: 15px;
     cursor: default;
@@ -116,7 +123,7 @@
 
 .graph {
     width: 100%;
-    height: 531px;
+    height: 100vh;
 }
 
 .actionButtons {

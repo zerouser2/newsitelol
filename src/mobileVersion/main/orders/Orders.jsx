@@ -1,8 +1,8 @@
 import styles from './orders.module.scss';
-import nocompleted from '../../images/nocompleted.png';
-import completed from '../../images/completed.png';
-import arrowUp from '../../images/arrowup.png';
-import arrowDown from '../../images/arrowdown.png';
+import nocompleted from '../../images/nocompleted.svg';
+import completed from '../../images/completed.svg';
+import arrowUp from '../../images/arrowup.svg';
+import arrowDown from '../../images/arrowdown.svg';
 
 function Orders() {
     return (  

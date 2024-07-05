@@ -1,46 +1,64 @@
 .header {
     display: flex;
     justify-content: space-between;
-    height: 587px;
+    height: 100vh;
     background-color: #161514;
     position: relative;
-    padding: 18px 1% 3% 3.5%;
+    overflow: hidden;
+    padding: 18px 3% 3% 3.5%;
 
     img {
         position: absolute;
     }
 }
 
+.leftContainer {
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    width: 100%;
+    justify-content: space-between;
+}
+
 .images {
     display: flex;
-    max-width: 393px;
+    width: 100%;    
     height: 310px;
     overflow: hidden;
 }
 
 .women {
-    margin: 22px 0 0 27px;
+    margin: 22px 0 0 26px;
     z-index: 0;
-    width: 280px;
-    height: 134px;
     object-fit: cover;
-    clip-path: polygon(-75% 50%, 97% 0, 150% 69%, 50% 60%, 56% 80%, 25% 100%, 25% 78%);
-    border-radius: 25px;
-    border-top-left-radius: 50%;
 }
 
 .coins {
-    margin: 135px 0 0 170px;
+    margin: 140px 0 0 170px;
 }
 
 .bigText {
-    position: absolute;
     color: #fff;
+    width: 35%;
     font-weight: 700;
     margin-left: 24px;
-    font-size: 40px;
+    margin-top: 5%;
+    font-size: clamp(2.5rem, 3vw, 3.25rem);
     line-height: 52px;
     z-index: 1;
+}
+
+.big {
+    white-space: nowrap;
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 1px;
+        align-items: flex-end;
+        justify-content: center;
+    }
 }
 
 .smallText {
@@ -49,10 +67,9 @@
     align-items: center;
     color: rgba(255, 255, 255, 0.6);
     padding-top: 16px;
-    max-width: 470px;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 20.8px;
+    font-size: clamp(1rem, 1.2vw, 6rem);
+    line-height: clamp(1rem, 1.5vw, 6rem);
 }
 
 text {
@@ -84,11 +101,33 @@ text {
 .circle {
     position: absolute;
     top: -40%;
-    max-width: 684px;
+    left: -10%;
+    max-width: 784px;
     width: 100%;
     height: 684px;
-    background: linear-gradient(135deg, #d83b69, #d55629 50%, #fbd141);
+    background: linear-gradient(225deg, #d83b69, #d55629 50%, #fbd141);
     z-index: 0;
     border-radius: 50%;
-    filter: blur(175px);
+    filter: blur(150px);
+}
+
+.circleBlock {
+    position: relative;
+    height: 1px;
+}
+
+@media (min-width: 1629px) {
+    .header {
+        padding: 130px 15% 10% 10%;
+    }
+
+    .leftContainer {
+        justify-content: center;
+    }
+
+
+    .circle {
+        left: 5%;
+        top: 10%;
+    }
 }

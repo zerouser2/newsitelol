@@ -1,10 +1,10 @@
 import styles from './favorites.module.scss';
-import notcoin from '../../images/notcoin.png';
-import notcoinGraph from '../../images/notcoinGraph.png';
-import usdt from '../../images/usdt.png';
-import usdtGraph from '../../images/usdtGraph.png';
-import dogecoin from '../../images/dogecoin.png';
-import dogecoinGraph from '../../images/dogecoinGraph.png';
+import notcoin from '../../images/notcoin.svg';
+import notcoinGraph from '../../images/notcoinGraph.svg';
+import usdt from '../../images/usdt.svg';
+import usdtGraph from '../../images/usdtGraph.svg';
+import dogecoin from '../../images/dogecoin.svg';
+import dogecoinGraph from '../../images/dogecoinGraph.svg';
 
 function Favorites() {
     return (

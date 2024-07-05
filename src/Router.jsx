@@ -1,22 +1,50 @@
+import { useState } from 'react';
 import styles from './router.module.scss';
 import { Outlet, Link, useLocation } from 'react-router-dom';
+import iconButton from './mobileVersion/images/iconbutton.svg'
 
 function Router() {
+    const [isActive, setActive] = useState(false)
+
     return (
-        <div className={styles.navigation}>
-            <div className={styles.navs}>
-                <Link to='/allcomponents'>Все компоненты</Link>
-                <Link to='/header'>Хедер</Link>
-                <Link to='/totalbalance'>Баланс</Link>
-                <Link to='/notactive'>Не подключенный кошелек</Link>
-                <Link to='/graph'>График</Link>
-                <Link to='/frens'>Френс</Link>
-                <Link to='/tasks'>Задачи</Link>
+        <>
+            <div className={styles.burgerMenu}>
+                <img src={iconButton} onClick={() => setActive(!isActive)}/>
+            </div>
+            <div className={`${styles.navigation} ${isActive ? styles.active : ''}`}>
+                <span className={`material-symbols-outlined ${styles.cancel}`} onClick={() => setActive(false)}>
+                    cancel
+                </span>
+                <div className={styles.navs}>
+                    <p><span>N</span>AVIGATION</p>
+                    <ul>
+                        <li>
+                            <Link to='/'>Хедер</Link>
+                        </li>
+                        <li>
+                            <Link to='/totalbalance'>Баланс</Link>
+                        </li>
+                        <li>
+                            <Link to='/notactive'>Не подключенный кошелек</Link>
+                        </li>
+                        <li>
+                            <Link to='/graph'>График</Link>
+
+                        </li>
+                        <li>
+                            <Link to='/frens'>Френс</Link>
+
+                        </li>
+                        <li>
+                            <Link to='/tasks'>Задачи</Link>
+
+                        </li>
+
+                    </ul>
+                </div>
             </div>
 
-
-            <Outlet />
-        </div>
+        </>
     );
 }
 

@@ -88,7 +88,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    white-space: nowrap;
     width: 100%;
     margin-bottom: 21px;
 
@@ -105,8 +104,8 @@
 .imgandtext {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 40%;
+    gap: 8%;
+    width: 70%;
 }
 
 .diamond {

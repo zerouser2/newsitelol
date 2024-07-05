@@ -1,66 +1,74 @@
 import { useState } from 'react';
 import styles from './graph.module.scss';
-import starImg from '../../images/star.png'
+import starImg from '../../images/star.svg'
 import GraphBlock from './GraphBlock';
 import TradingViewWidget from './TradingViewWidget';
+import Router from '../../../Router';
+import MobileNavigation from '../../MobileNavigation';
 
 function MobileGraph() {
     const [isOpen, setOpen] = useState(false)
 
     return (
-        <div className={styles.graphContainer}>
-            <div className={styles.actions}>
+        <>
+            <MobileNavigation />
+            <div className={styles.container}>
+                <div className={styles.graphContainer}>
+                    <div className={styles.actions}>
 
-                <div className={styles.yellowContainer}>
-                    <div className={styles.yellow}></div>
+                        <div className={styles.yellowContainer}>
+                            <div className={styles.yellow}></div>
 
-                </div>
-
-                <div className={styles.choose}>
-                    <div className={styles.arrowBack} style={{ cursor: 'pointer' }}>
-                        <span class="material-symbols-outlined" >
-                            chevron_left
-                        </span>
-                    </div>
-
-                    <div style={{ display: 'flex', userSelect: 'none' }} onClick={() => setOpen(!isOpen)}>
-                        <p style={{ cursor: 'pointer' }}>BTC / ETH </p>
-                        <div className={styles.arrowDown}>
-                            <span class="material-symbols-outlined" style={{ cursor: 'pointer' }}>
-                                keyboard_arrow_down
-                            </span>
                         </div>
+
+                        <div className={styles.choose}>
+                            <div className={styles.arrowBack} style={{ cursor: 'pointer' }}>
+                                <span class="material-symbols-outlined" >
+                                    chevron_left
+                                </span>
+                            </div>
+
+                            <div style={{ display: 'flex', userSelect: 'none' }} onClick={() => setOpen(!isOpen)}>
+                                <p style={{ cursor: 'pointer' }}>BTC / ETH </p>
+                                <div className={styles.arrowDown}>
+                                    <span class="material-symbols-outlined" style={{ cursor: 'pointer' }}>
+                                        keyboard_arrow_down
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div className={styles.menuContainer}>
+                                <nav className={`${styles.menu} ${isOpen ? styles.active : ''}`}>
+                                    <ul className={styles.menulist}>
+                                        <li className={styles.menuitem}>BTC / ETH</li>
+                                        <li className={styles.menuitem}>Что-то</li>
+                                        <li className={styles.menuitem}>Что-то</li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+
+                            <div className={styles.starBlock}>
+                                <img src={starImg} className={styles.starImg} />
+                            </div>
+
+                        </div>
+
                     </div>
-
-                    <div className={styles.menuContainer}>
-                        <nav className={`${styles.menu} ${isOpen ? styles.active : ''}`}>
-                            <ul className={styles.menulist}>
-                                <li className={styles.menuitem}>BTC / ETH</li>
-                                <li className={styles.menuitem}>Что-то</li>
-                                <li className={styles.menuitem}>Что-то</li>
-                            </ul>
-                        </nav>
-
-                    </div>
-
-                    <div className={styles.starBlock}>
-                        <img src={starImg} className={styles.starImg} />
+                    <GraphBlock />
+                    <TradingViewWidget />
+                    <div className={styles.actionButtons}>
+                        <a href='#'>
+                            Call
+                        </a>
+                        <a href='#'>
+                            Put
+                        </a>
                     </div>
 
                 </div>
-
             </div>
-            <GraphBlock />
-            <TradingViewWidget />
-            <div className={styles.actionButtons}>
-                <a href='#'>
-                    Call
-                </a>
-                <a href='#'>
-                    Put
-                </a>
-            </div>
-        </div>
+        </>
     );
 }
 

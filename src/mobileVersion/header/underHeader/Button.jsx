@@ -1,11 +1,13 @@
 import React, { useState, useRef } from 'react';
 import styles from './button.module.scss';
+import { useNavigate } from 'react-router-dom'; 
 
 function Button() {
     const [isDragging, setIsDragging] = useState(false);
     const [startPosX, setStartPosX] = useState(0);
     const [currentPosX, setCurrentPosX] = useState(0);
     const buttonRef = useRef(null);
+    const navigate = useNavigate();
 
     const handleMouseDown = (e) => {
         setIsDragging(true);
@@ -16,17 +18,17 @@ function Button() {
         if (isDragging) {
             const clientX = e.clientX || e.touches[0].clientX;
             const diffX = clientX - startPosX;
-            const newPosX = Math.max(0, Math.min(diffX, buttonRef.current.offsetWidth - 50));
+            const newPosX = Math.max(0, Math.min(diffX, buttonRef.current.offsetWidth - 50)); 
             setCurrentPosX(newPosX);
         }
     };
 
     const handleMouseUp = () => {
         if (isDragging) {
-            if (currentPosX > 150) {
-                alert('Swiped right!');
+            const threshold = buttonRef.current.offsetWidth * 0.5;
+            if (currentPosX > threshold) {
+                navigate('/notactive');
             }
-
             setCurrentPosX(0);
             setIsDragging(false);
             setStartPosX(0);
@@ -49,7 +51,7 @@ function Button() {
                 >
                     arrow_right_alt
                 </span>
-                <p>Swipe to Start</p>
+                <p>Tap to Start</p>
                 <div className={styles.spans}>
                     <span className={`material-symbols-outlined ${styles.firstSpan}`}>
                         chevron_right

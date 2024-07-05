@@ -14,9 +14,15 @@
     display: flex;
     align-items: center;
     margin-bottom: 6px;
+    white-space: nowrap;
     gap: 5%;
 }
 
+.leftmoney {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 @media (max-width: 930px) and (min-width: 864px) {
     .orders {

@@ -11,6 +11,13 @@
     color: #fff;
 }
 
+.cost {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: #fff;
+}
+
 .notcoin, .usdt, .dogecoin {
     display: flex;
     align-items: center;
@@ -20,9 +27,23 @@
     z-index: 1;
 }
 
+.leftval {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    white-space: nowrap;
+}
+
+.graph {
+    width: 25%;
+}
+
 .favText {
     color: #fff;
     padding-left: 24px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
 }
 
 @media (max-width: 930px) and (min-width: 864px) {

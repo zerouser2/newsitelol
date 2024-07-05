@@ -39,9 +39,10 @@
     width: 100%;
     height: 50%;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%), url(../../images/fonWomen.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%), url(../../images/fonWomen.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    object-fit: cover;
     background-position: center;
     box-shadow: 0 -6px 4px -4px rgba(0, 0, 0, 0.2), 
                0px -20px 50px rgba(0, 0, 0, 0.8); 

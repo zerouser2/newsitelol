@@ -1,5 +1,5 @@
 import styles from './actions.module.scss'
-import starImg from '../images/star.png'
+import starImg from '../images/star.svg'
 import { useState } from 'react';
 
 function Actions() {

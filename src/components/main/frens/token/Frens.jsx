@@ -1,3 +1,5 @@
+import Navigation from '../../../Navigation';
+import RouterPc from '../../../RouterPc';
 import OrangeCircle from '../../circles/OrangeCircle';
 import RedCircle from '../../circles/RedCircle';
 import FrenQuantity from '../frenquantity/FrenQuantity';
@@ -7,14 +9,18 @@ import styles from './token.module.scss'
 
 
 function Frens() {
-    return (  
-        <div className={styles.container}>
-            <OrangeCircle />
-            <EarnTokens />
-            <FrenQuantity />
-            <Light />
-            <RedCircle />
-        </div>
+    return (
+        <>
+            <Navigation />
+            <div className={styles.container}>
+                <OrangeCircle />
+                <EarnTokens />
+                <FrenQuantity />
+                <Light />
+                <RedCircle />
+            </div>
+
+        </>
     );
 }
 

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styles from './graphblock.module.scss';
-import arrowUp from '../../images/arrowup.png'
+import arrowUp from '../../images/arrowup.svg'
 import arrowDown from '../../images/arrowdown.png';
-import notcoin from '../../images/notcoin.png'
+import notcoin from '../../images/notcoin.svg'
 import Modal from './Modal';
 
 
@@ -37,9 +37,6 @@ function GraphBlock() {
 
                     </div>
                 </div>
-
-
-
             </div>
 
             <div className={styles.dropdown}>

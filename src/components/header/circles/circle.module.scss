@@ -1,4 +1,7 @@
-
+.circles {
+    position: relative;
+    height: 1px;
+}
 
 .whitecircle {
     position: absolute;
@@ -7,7 +10,8 @@
     border-radius: 50%;
     border: 1.5px solid rgba(128, 128, 128, 0.5);
     transform: translateX(-50%);
-    top: 20%;
+    top: -230px;
+    z-index: 0;
 }
 
 .whitecircle2 {
@@ -17,6 +21,6 @@
     width: 224.89px;
     height: 224.89px;
     transform: translateX(-40%);
-    top: 14%;
+    top: -250px;
 }
 

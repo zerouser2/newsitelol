@@ -1,6 +1,7 @@
 .graphActions {
     color: #fff;
     margin-left: 3%;
+    margin-top: 22px;
     position: relative;
 }
 
@@ -9,6 +10,7 @@
     align-items: center;
     justify-content: space-between;
     width: 99%;
+    height: 50px;
 
     div {
         display: flex;
@@ -46,14 +48,17 @@
     padding: 4px 2%;
     white-space: nowrap;
     background-color: #FFFFFF14;
+    border-radius: 8px;
 }
 
 .selection {
     display: flex;
     align-items: center;
     margin-right: 12%;
+    padding: 4px 5px;
     white-space: nowrap;
     background-color: #FFFFFF14;
+    border-radius: 8px;
 }
 
 
@@ -83,11 +88,11 @@
 
 .menu {
     position: absolute;
-    bottom: 58%;
+    top: 30%;
     right: 0.5%;
     border: 1px solid #555;
     background-color: #555;
-    padding: 2%;
+    padding: 10px;
     color: black;
     border-radius: 15px;
     cursor: default;

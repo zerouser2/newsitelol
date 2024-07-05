@@ -3,6 +3,7 @@
     align-items: flex-end;
     margin-top: 40px;
     position: relative;
+    overflow: hidden;
 }
 
 .button {
@@ -13,39 +14,29 @@
     border-radius: 16px;
     background-color: #FFFFFF26;
     width: 100%;
-    max-width: 342px;
+
     height: 72px;
+    padding-left: 5px;
     color: #fff;
     backdrop-filter: blur(3px);
-
-    div {
-        display: flex;
-        align-items: center;
-    }
-
-    p {
-        font-size: 12px;
-    }
+    overflow: hidden; // Ограничиваем выход за границы
 }
 
-.spans {
-    span {
-        height: 20px;
-    }
+.spans span {
+    height: 20px;
 }
 
 @keyframes fade {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
     50% {
-      opacity: 0;
+        opacity: 0;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-
+}
 
 .firstSpan {
     animation: fade 2s infinite;
@@ -58,16 +49,16 @@
 .thirdSpan {
     animation: fade 2s infinite 1s;
 }
+
 .arrow {
     background-color: #fff;
     color: #161514;
     padding: 15px;
     border-radius: 16px;
-    margin: 8px;
     z-index: 2;
     cursor: pointer;
+    position: relative;
 }
-
 .circle {
     position: absolute;
     width: 140px;

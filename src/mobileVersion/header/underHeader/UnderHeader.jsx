@@ -1,5 +1,5 @@
 import styles from './underheader.module.scss';
-import line from '../images/lines.png'
+import line from '../images/lines.svg';
 import Button from './Button';
 
 function UnderHeader() {

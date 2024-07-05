@@ -13,7 +13,7 @@
     position: relative;
     padding: 43px 0 15px 0;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     flex-wrap: wrap;
     background-color: #161514;
     overflow: hidden;
@@ -183,6 +183,7 @@
     bottom: 1%;
 
     a {
+        text-decoration: none;
         padding: 25px 35px;
         background: linear-gradient(134.98deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%);
         border-radius: 16px;
